@@ -1,0 +1,6 @@
+{
+  "name": "Aetheria Online: 3D MMORPG",
+  "description": "An expansive 3D MMORPG built with Three.js featuring real-time combat, class specializations, quests, world boss raids, active online adventurers, and open-world exploration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

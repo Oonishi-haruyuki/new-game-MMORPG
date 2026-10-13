@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Aetheria Online: 3D MMORPG</title>
+    <meta name="description" content="An expansive 3D MMORPG built with Three.js featuring real-time combat, class specializations, quests, world boss raids, active online adventurers, and open-world exploration." />
+    <meta property="og:title" content="Aetheria Online: 3D MMORPG" />
+    <meta property="og:description" content="An expansive 3D MMORPG built with Three.js featuring real-time combat, class specializations, quests, world boss raids, active online adventurers, and open-world exploration." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      // Gracefully ignore Vite HMR / WebSocket close errors in the dev proxy environment
+      window.addEventListener('error', function (e) {
+        if (
+          e &&
+          (e.message?.includes('WebSocket') ||
+            e.filename?.includes('@vite/client') ||
+            e.message?.includes('vite'))
+        ) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function (e) {
+        if (
+          e &&
+          e.reason &&
+          (String(e.reason).includes('WebSocket') ||
+            String(e.reason.message).includes('WebSocket') ||
+            String(e.reason.stack).includes('@vite/client'))
+        ) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, true);
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased overflow-hidden select-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
